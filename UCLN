@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a,b;
+
+    printf("nhap vao a la:");
+    scanf("%d", &a);
+
+    printf("nhap vao b la:");
+    scanf("%d", &b);
+
+    int UCLN=0;
+
+    for(int i = 1; i <= a; i++)
+{
+        for (int j = 1; j <= b; j++)
+    {
+            if (a % i == 0) 
+      {
+            
+            if (b % j == 0)
+        {
+            
+                if ( i == j ) 
+                {
+                    UCLN = i;
+                }
+        }  
+      }
+    
+            
+    }
+        
+}
+    printf("UCLN la %d\n",UCLN);
+    
+    return 0;
+}
